@@ -1,0 +1,263 @@
+.poll-card {
+  background-color: var(--background-light);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.poll-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+.user-info h4 {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.action-btn:hover {
+  color: var(--text-primary);
+}
+
+.poll-content {
+  padding: 0.75rem 1rem;
+}
+
+.poll-question {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.hashtag {
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.hashtag:hover {
+  text-decoration: underline;
+}
+
+.poll-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.poll-option {
+  position: relative;
+  padding: 0.75rem 1rem;
+  background-color: var(--background-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  overflow: hidden;
+}
+
+.poll-option:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.poll-option.selected {
+  border-color: var(--primary-color);
+}
+
+.option-text {
+  position: relative;
+  z-index: 2;
+}
+
+.option-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.option-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(108, 92, 231, 0.2);
+  z-index: 1;
+  transition: width 0.5s ease;
+}
+
+.option-percentage {
+  font-weight: 600;
+  color: var(--primary-color);
+  position: relative;
+  z-index: 2;
+}
+
+.poll-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.reaction-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.reaction-btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+}
+
+.reaction-btn:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.reaction-btn.active {
+  color: var(--primary-color);
+}
+
+.emoji {
+  margin-right: 0.25rem;
+}
+
+.count {
+  font-size: 0.75rem;
+}
+
+.comments-toggle,
+.share-btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.comments-toggle i,
+.share-btn i {
+  margin-right: 0.25rem;
+}
+
+.comments-toggle:hover,
+.share-btn:hover {
+  color: var(--text-primary);
+}
+
+.comments-section {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.comments-list {
+  margin-bottom: 1rem;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 0.75rem;
+}
+
+.comment-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.comment-username {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.comment-time {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.comment-text {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.comment-form {
+  display: flex;
+  align-items: center;
+}
+
+.comment-form input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+}
+
+.comment-form button {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-size: 1rem;
+  cursor: pointer;
+}

@@ -1,0 +1,132 @@
+.message-thread {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.thread-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.thread-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+.thread-info {
+  flex: 1;
+}
+
+.thread-info h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.online-status {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.thread-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.messages-container {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.message {
+  display: flex;
+  max-width: 70%;
+}
+
+.message.sent {
+  align-self: flex-end;
+}
+
+.message.received {
+  align-self: flex-start;
+}
+
+.message-content {
+  padding: 0.75rem 1rem;
+  border-radius: 18px;
+  position: relative;
+}
+
+.message.sent .message-content {
+  background-color: var(--primary-color);
+  border-bottom-right-radius: 4px;
+}
+
+.message.received .message-content {
+  background-color: var(--background-dark);
+  border-bottom-left-radius: 4px;
+}
+
+.message-content p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.message-time {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.25rem;
+  display: block;
+  text-align: right;
+}
+
+.message-input {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.message-input input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 24px;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  margin: 0 0.5rem;
+}
+
+.attachment-btn,
+.emoji-btn,
+.send-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.send-btn {
+  color: var(--primary-color);
+}
+
+.attachment-btn:hover,
+.emoji-btn:hover {
+  color: var(--text-primary);
+}
+
+.send-btn:hover {
+  color: var(--primary-color);
+  opacity: 0.8;
+}
